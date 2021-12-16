@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
     <link
     rel="stylesheet"
@@ -441,14 +442,44 @@
                     </li>
                 </ul>
             </div>
+            <!-- FOOTER SUBSCRIBE -->
+            <div class="subscribe-footer">
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <div class="subscribe-footer-section">
+                    <form class="subscribe-form" name="e-mail">
+                        <div>
+                            <lable class="subscribe-lable" for="email">
+                                <input
+                                    class="subscribe-input"
+                                    type="email"
+                                    name="e-mail"
+                                    title="i@i.ua"
+                                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                                    placeholder="E-mail"
+                                />
+                            </lable>
+                        </div>
+                    </form>
+                    <button type="button" class="btn subscribe-button">Подписаться
+                            <svg class="icon-send" width="24px" height="24px">
+                                <use
+                                    href="./icons.svg#icon-icon-send"
+                                ></use>
+                            </svg>
+                    </button>
+                </div>
             </div>
+        </div>
         </footer>
         <div class="backdrop is-hidden center" data-modal>
             <div class="modal">
                 <button 
                 type="button"
                 class="modal-close-btn" 
-                data-modal-close>X
+                data-modal-close>
+                <svg class="close-btn" width="11" height="11">
+                    <use href="./icons.svg#icon-Vector-X"></use>
+                </svg>
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#" class="modal-form">
@@ -520,7 +551,6 @@
                     </button>
                 </div>
             </div>
-        </div>
         <script src="./js/modal.js"></script>
     </body>
 </html>
