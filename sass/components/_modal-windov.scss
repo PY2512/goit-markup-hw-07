@@ -91,7 +91,6 @@
     color: #757575;
 }
 
-
 .modal__field{
     margin-bottom: 30px;
 
@@ -132,14 +131,16 @@
     align-items: center;
     justify-content: center;
 
-    .modal-check:checked + &span {
-        background-color: #188ce8;
-        border: none;
-    }
+    
+}
 
-    .modal-check:checked + & span svg {
-        fill: #FFFFFF;
-    }
+.modal-check:checked + .check-text span {
+    background-color: #188ce8;
+    border: none;
+}
+
+.modal-check:checked + .check-text span svg {
+    fill: #FFFFFF;
 }
 
 .check-icon{
@@ -149,4 +150,16 @@
 .contract-url {
 	color: #2196f3;
 }
+
+.close-btn{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+
+
 
